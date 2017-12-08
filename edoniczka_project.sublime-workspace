@@ -520,10 +520,11 @@
 	"buffers":
 	[
 		{
-			"file": "resources/assets/js/components/Example.js",
+			"file": "database/migrations/2017_12_08_081151_create_measures_table.php",
 			"settings":
 			{
-				"buffer_size": 829,
+				"buffer_size": 749,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -536,7 +537,7 @@
 	"command_palette":
 	{
 		"height": 89.0,
-		"last_filter": "makeau",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -707,6 +708,9 @@
 		"/F/studia/sem6/swlab/E-Doniczka",
 		"/F/studia/sem6/swlab/E-Doniczka/app",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Http",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Controllers",
+		"/F/studia/sem6/swlab/E-Doniczka/database",
+		"/F/studia/sem6/swlab/E-Doniczka/database/migrations",
 		"/F/studia/sem6/swlab/E-Doniczka/resources",
 		"/F/studia/sem6/swlab/E-Doniczka/resources/assets",
 		"/F/studia/sem6/swlab/E-Doniczka/resources/assets/js",
@@ -716,6 +720,11 @@
 	],
 	"file_history":
 	[
+		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Controllers/MeasureController.php",
+		"/F/studia/sem6/swlab/E-Doniczka/routes/web.php",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Measure.php",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Pomiar.php",
+		"/F/studia/sem6/swlab/E-Doniczka/database/migrations/2017_12_08_081100_create_pomiars_table.php",
 		"/C/Users/Marcin/AppData/Local/Temp/_tcx/2/0/web/.env",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Console/Kernel.php",
 		"/F/studia/sem6/swlab/E-Doniczka/package.json",
@@ -838,12 +847,7 @@
 		"/G/xampp/htdocs/fermy/app/Http/Controllers/CodziennyRaport.php",
 		"/G/xampp/htdocs/fermy/database/migrations/2014_10_12_100000_create_password_resets_table.php",
 		"/G/xampp/htdocs/mapy/database/migrations/2017_10_24_081027_create_areas_table.php",
-		"/G/xampp/htdocs/fermy/database/migrations/2017_11_21_173405_kurniki.php",
-		"/G/xampp/htdocs/fermy/app/Http/Controllers/Auth/ForgotPasswordController.php",
-		"/G/xampp/htdocs/fermy/app/Http/Controllers/Auth/ResetPasswordController.php",
-		"/D/inz/runrank_old/package.json",
-		"/G/eskada/sk-vicards-backend-new/library/SK/Mobileapi.php",
-		"/G/eskada/sk-vicards-backend-new/application/configs/application.ini"
+		"/G/xampp/htdocs/fermy/database/migrations/2017_11_21_173405_kurniki.php"
 	],
 	"find":
 	{
@@ -883,24 +887,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "resources/assets/js/components/Example.js",
-					"semi_transient": true,
+					"file": "database/migrations/2017_12_08_081151_create_measures_table.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 829,
+						"buffer_size": 749,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								102,
-								102
+								215,
+								215
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
