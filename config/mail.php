@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.wp.pl'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'doniczka_mwp@wp.pl'),
+        'name' => env('MAIL_FROM_NAME', 'Doniczka'),
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('doniczka_mwp@wp.pl'),
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('doniczka_sw'),
 
     /*
     |--------------------------------------------------------------------------
@@ -117,6 +117,7 @@ return [
 
         'paths' => [
             resource_path('views/vendor/mail'),
+            resource_path('views/mail'),
         ],
     ],
 

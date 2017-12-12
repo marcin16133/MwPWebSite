@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"me",
+				"measureTime〔variable〕"
+			],
+			[
+				"meas",
+				"measureTime"
+			],
+			[
+				"hum",
+				"humearth"
+			],
+			[
+				"date",
+				"dateTimeBetween〔function〕"
+			],
+			[
+				"tem",
+				"temperatures"
+			],
+			[
+				"meau",
+				"measures"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"mea",
+				"$measures〔variable〕"
+			],
+			[
+				"end",
+				"endsection"
+			],
+			[
+				"Re",
+				"Request::ip\tReturns the client IP address."
+			],
+			[
+				"boot",
+				"boottext\ttext"
+			],
+			[
+				"dat",
+				"dateTime〔function〕"
+			],
+			[
+				"nume",
+				"numberBetween〔function〕"
+			],
+			[
 				"proce",
 				"$procentSmiertelnosci〔variable〕"
 			],
@@ -160,10 +212,6 @@
 				"getStada"
 			],
 			[
-				"fun",
-				"function〔keyword〕"
-			],
-			[
 				"kurn",
 				"kurniki"
 			],
@@ -274,10 +322,6 @@
 			[
 				"align-center",
 				"align-content-center \tBootstrap 4 Class"
-			],
-			[
-				"boot",
-				"bootbutton\tbutton"
 			],
 			[
 				"inline",
@@ -470,60 +514,52 @@
 			[
 				"inv",
 				"inv_uuid"
-			],
-			[
-				"item",
-				"item_uuid"
-			],
-			[
-				"valida",
-				"validateInt"
-			],
-			[
-				"validate",
-				"validateString"
-			],
-			[
-				"valide",
-				"validateString"
-			],
-			[
-				"server_",
-				"server_uuid"
-			],
-			[
-				"compa",
-				"company_id"
-			],
-			[
-				"site",
-				"site_uuid"
-			],
-			[
-				"valie",
-				"validateInt"
-			],
-			[
-				"theme",
-				"theme_id"
-			],
-			[
-				"val",
-				"validateInt"
-			],
-			[
-				"compan",
-				"company_id"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "database/migrations/2017_12_08_081151_create_measures_table.php",
+			"file": "app/Http/Controllers/HomeController.php",
 			"settings":
 			{
-				"buffer_size": 749,
+				"buffer_size": 1332,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 568,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/home/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 1471,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "database/seeds/MeasuresTableSeeder.php",
+			"settings":
+			{
+				"buffer_size": 645,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/layouts/app.blade.php",
+			"settings":
+			{
+				"buffer_size": 3329,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -536,17 +572,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 89.0,
-		"last_filter": "",
+		"height": 490.0,
+		"last_filter": "makese",
 		"selected_items":
 		[
 			[
-				"makeau",
-				"Laravel Artisan 5: Make:Auth"
+				"makese",
+				"Laravel Artisan 5: Make:Seeder"
 			],
 			[
 				"serve",
 				"Laravel Artisan 5: Serve"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"makeau",
+				"Laravel Artisan 5: Make:Auth"
 			],
 			[
 				"serv",
@@ -673,15 +717,11 @@
 				"SublimeLinter: Choose Lint Mode"
 			],
 			[
-				"install",
-				"SublimeLinter: Show All Errors"
-			],
-			[
 				"pastry",
 				"Text Pastry: From 1 To X"
 			]
 		],
-		"width": 609.0
+		"width": 1082.0
 	},
 	"console":
 	{
@@ -709,19 +749,45 @@
 		"/F/studia/sem6/swlab/E-Doniczka/app",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Http",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Controllers",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Middleware",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Providers",
+		"/F/studia/sem6/swlab/E-Doniczka/config",
 		"/F/studia/sem6/swlab/E-Doniczka/database",
 		"/F/studia/sem6/swlab/E-Doniczka/database/migrations",
+		"/F/studia/sem6/swlab/E-Doniczka/database/seeds",
 		"/F/studia/sem6/swlab/E-Doniczka/resources",
 		"/F/studia/sem6/swlab/E-Doniczka/resources/assets",
 		"/F/studia/sem6/swlab/E-Doniczka/resources/assets/js",
 		"/F/studia/sem6/swlab/E-Doniczka/resources/assets/js/components",
 		"/F/studia/sem6/swlab/E-Doniczka/resources/views",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/views/home",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/views/layouts",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/views/mail",
 		"/F/studia/sem6/swlab/E-Doniczka/routes"
 	],
 	"file_history":
 	[
-		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Controllers/MeasureController.php",
+		"/F/studia/sem6/swlab/esptool/main.py",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Middleware/VerifyCsrfToken.php",
+		"/F/studia/sem6/swlab/E-Doniczka/.env",
+		"/F/studia/sem6/swlab/E-Doniczka/config/app.php",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Providers/AppServiceProvider.php",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/assets/js/app.js",
+		"/F/studia/sem6/swlab/E-Doniczka/config/mail.php",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/views/mail/first.blade.php",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/assets/js/components/Example.js",
 		"/F/studia/sem6/swlab/E-Doniczka/routes/web.php",
+		"/F/studia/sem6/swlab/E-Doniczka/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/F/studia/sem6/swlab/E-Doniczka/database/seeds/DatabaseSeeder.php",
+		"/F/studia/sem6/swlab/E-Doniczka/database/migrations/2017_12_08_081151_create_measures_table.php",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/views/home/index.blade.php",
+		"/F/studia/sem6/swlab/E-Doniczka/database/seeds/MeasuresTableSeeder.php",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Controllers/HomeController.php",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Controllers/MeasureController.php",
+		"/F/studia/sem6/swlab/E-Doniczka/database/seeds/UsersTableSeeder.php",
+		"/F/studia/sem6/swlab/E-Doniczka/app/User.php",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/views/layouts/app.blade.php",
+		"/F/studia/sem6/swlab/E-Doniczka/config/database.php",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Measure.php",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Pomiar.php",
 		"/F/studia/sem6/swlab/E-Doniczka/database/migrations/2017_12_08_081100_create_pomiars_table.php",
@@ -828,30 +894,11 @@
 		"/C/Users/Marcin/AppData/Local/Temp/_tcx/1/0/web/database/seeds/UsersTableSeeder.php",
 		"/G/xampp/htdocs/mapy/app/Http/Controllers/PlantController.php",
 		"/G/xampp/htdocs/fermy/database/seeds/CodzienneRaportyTableSeeder.php",
-		"/G/xampp/htdocs/fermy/app/Http/Controllers/CodziennyRaportController.php",
-		"/G/xampp/htdocs/fermy/resources/views/welcome.blade.php",
-		"/G/xampp/htdocs/fermy/database/seeds/CodzienneRaportySeeder.php",
-		"/G/xampp/htdocs/fermy/database/migrations/2017_11_21_173123_create_fermy_table.php",
-		"/G/xampp/htdocs/fermy/config/database.php",
-		"/G/xampp/htdocs/mapy/.env",
-		"/C/Users/Marcin/AppData/Local/Temp/_tcx/1/0/public_html/themes/brado/img/header_images/magazyn.jpg",
-		"/C/Users/Marcin/AppData/Local/Temp/_tcx/1/0/public_html/themes/brado/img/phone.png",
-		"/C/Users/Marcin/AppData/Local/Temp/_tcx/1/0/public_html/themes/brado/img/msg.png",
-		"/C/Users/Marcin/AppData/Local/Temp/_tcx/1/0/public_html/themes/brado/img/main/1.jpg",
-		"/C/Users/Marcin/AppData/Local/Temp/_tcx/1/0/public_html/themes/brado/img/marker.png",
-		"/G/xampp/htdocs/fermy/config/app.php",
-		"/C/Users/Marcin/AppData/Local/Temp/_tcx/1/0/barthaus/uploads/pages/cat-img/PNTO-010.jpg",
-		"/C/Users/Marcin/AppData/Local/Temp/_tcx/1/0/barthaus/uploads/pages/cat-img/PNTO-011.jpg",
-		"/G/xampp/htdocs/fermy/database/migrations/2017_11_21_174123_create_fermy_table.php",
-		"/D/inz/runrank_old/android/settings.gradle",
-		"/G/xampp/htdocs/fermy/app/Http/Controllers/CodziennyRaport.php",
-		"/G/xampp/htdocs/fermy/database/migrations/2014_10_12_100000_create_password_resets_table.php",
-		"/G/xampp/htdocs/mapy/database/migrations/2017_10_24_081027_create_areas_table.php",
-		"/G/xampp/htdocs/fermy/database/migrations/2017_11_21_173405_kurniki.php"
+		"/G/xampp/htdocs/fermy/app/Http/Controllers/CodziennyRaportController.php"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 52.0
 	},
 	"find_in_files":
 	{
@@ -865,6 +912,12 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"adres +",
+			"doniczka_sw",
+			"->",
+			"('",
+			"id",
+			"('"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -887,19 +940,110 @@
 			[
 				{
 					"buffer": 0,
-					"file": "database/migrations/2017_12_08_081151_create_measures_table.php",
+					"file": "app/Http/Controllers/HomeController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 749,
+						"buffer_size": 1332,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								215,
-								215
+								587,
+								599
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 392.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 568,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/home/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1270,
+								1275
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 332.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "database/seeds/MeasuresTableSeeder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								590,
+								590
 							]
 						],
 						"settings":
@@ -913,7 +1057,38 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "resources/views/layouts/app.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3243,
+								3296
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1128.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
