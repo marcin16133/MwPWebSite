@@ -12,6 +12,9 @@
 */
 
 Route::post('/measure', 'MeasureController@store');
+
+
+
 Route::get('/measures', 'HomeController@plotData');
 
 Auth::routes();
