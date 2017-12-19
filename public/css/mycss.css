@@ -1,0 +1,77 @@
+#app {
+	background: url('/images/bg.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+.data {
+	position: absolute;
+	bottom: 0;
+	margin-left: 20px;
+}
+
+
+#water-level {
+	font-size: 40px;
+	color: #00aaff;
+	margin-top: 5px;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+#wifi {
+	font-size: 40px;
+	margin-top: 5px;
+	margin-left: 8px;
+	margin-right: 8px;
+	color: green;
+}
+
+#user {
+	font-size: 16px;
+	color: black;
+}
+
+.plot {
+	margin: 10px;
+}
+
+.navbar {
+	background-color: #12384420;
+}
+
+.navbar-brand {
+	font-family: cursive;
+	font-size: 26px;
+	color: #00aa00aa !important;
+}
+
+body {
+	font-family: Arial;
+}
+
+table {
+}
+
+td {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+	text-align: center !important;
+	background-color: #11a78320;
+
+	font-size: 14px;
+}
+
+th {
+	padding-left: 5px !important; 
+	padding-right: 5px !important;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+	text-align: center !important;
+
+	background-color: #11a78390;
+}
+

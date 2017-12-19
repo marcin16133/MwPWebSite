@@ -17,6 +17,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        date_default_timezone_set("Europe/Warsaw");
     }
 
     /**
@@ -26,45 +27,107 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $plants = new Plants();
-        $plants->callForPlants();
 
         $response = $this->setData(false);
 
 
-
-
         \Lava::LineChart('Temps', $response['temperatures'], [
-            'title' => 'Weather in October'
+            'title' => 'Temperatura',
+            'legend' => [
+                'position' => 'none'
+            ],
+            'hAxis' => [
+                'title' => 'Godzina'
+            ],
+            'vAxis' => [
+                'title' => 'Temperatura[*]'
+            ]
+        ]);
+
+        \Lava::LineChart('Hum', $response['hum'], [
+            'title' => 'Wilgotność',
+            'legend' => [
+                'position' => 'none'
+            ],
+            'hAxis' => [
+                'title' => 'Godzina'
+            ],
+            'vAxis' => [
+                'title' => 'Wilgotność[%]'
+            ]
+        ]);
+
+        \Lava::LineChart('HumEarth', $response['humearth'], [
+            'title' => 'Wilgotność gleby',
+            'legend' => [
+                'position' => 'none'
+            ],
+            'hAxis' => [
+                'title' => 'Godzina'
+            ],
+            'vAxis' => [
+                'title' => 'Wilgotność[%]'
+            ]
         ]);
         
+        
+        $conn = $this->checkConnection(strtotime($response['measures'][0]->date));
+        return view('home.index', ['measures' => $response['measures'], 'connection' => $conn]);
+    }
 
-
-        return view('home.index')->with('measures',$response['measures']);
+    private function checkConnection($time)
+    {
+        if ((time() - $time) > 360){
+            return false;
+        }
+        return true;
     }
 
 
     public function plotData(){
         $response = $this->setData(true);
+        $response['water_level'] = Measure::orderBy('date', true)->first()->water_level;
         return response()->json($response);
     }
 
 
     private function setData($render = true){
-        $count = 10; // ile ostatnich
+        $count = 5; // ile ostatnich
         $measures = Measure::orderBy('date', true)->limit($count)->get();
 
+
+
         $temperatures = \Lava::DataTable();
-        $temperatures->addDateColumn('Data')
+        $temperatures->addStringColumn('Data')
                      ->addNumberColumn('Temperatura');
 
         foreach ($measures as $measure) {
-            $temperatures->addRow([$measure->date,  $measure->temp]);
+            $temperatures->addRow([explode(' ',$measure->date)[1],  $measure->temp]);
         }
+
+        $hum = \Lava::DataTable();
+        $hum->addStringColumn('Data')
+                     ->addNumberColumn('Temperatura');
+
+        foreach ($measures as $measure) {
+            $hum->addRow([explode(' ',$measure->date)[1],  $measure->hum]);
+        }
+
+        $humearth = \Lava::DataTable();
+        $humearth->addStringColumn('Data')
+                     ->addNumberColumn('Temperatura');
+
+        foreach ($measures as $measure) {
+            $humearth->addRow([explode(' ',$measure->date)[1],  $measure->humearth]);
+        }
+
+
+        $connection = $this->checkConnection(strtotime($measures[0]->date));
+
         if ($render)
-            return array('table' => $this->getTable($measures), 'temperatures' => $temperatures);
+            return array('table' => $this->getTable($measures), 'temperatures' => $temperatures, 'hum' => $hum, 'humearth' => $humearth, 'connection' => $connection);
         else
-            return array('measures' => $measures, 'temperatures' => $temperatures);
+            return array('measures' => $measures, 'temperatures' => $temperatures, 'hum' => $hum, 'humearth' => $humearth, 'connection' => $connection);
 
     }
 
