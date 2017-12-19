@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Measure;
-use Khill\Lavacharts\Lavacharts;
+use App\Helpers\Plants;
 
 
 class HomeController extends Controller
@@ -26,7 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $plants = new Plants();
+        $plants->callForPlants();
+
         $response = $this->setData(false);
+
+
 
 
         \Lava::LineChart('Temps', $response['temperatures'], [

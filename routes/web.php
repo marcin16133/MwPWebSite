@@ -11,7 +11,10 @@
 |
 */
 
+
+
 Route::post('/measure', 'MeasureController@store');
+
 
 
 

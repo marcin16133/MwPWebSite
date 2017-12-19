@@ -48,6 +48,9 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof \Illuminate\Database\Eloquent\MassAssignmentException){
+            return response()->json(array("status" => false, "response" => "no all fields"),404);
+        }
         return parent::render($request, $exception);
     }
 }

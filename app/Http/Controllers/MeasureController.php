@@ -4,28 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Measure;
 use Illuminate\Http\Request;
+use Exception;
 
 class MeasureController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -35,51 +18,19 @@ class MeasureController extends Controller
      */
     public function store(Request $request)
     {
-        Measure::create($request->all());
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Measure  $measure
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Measure $measure)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Measure  $measure
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Measure $measure)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Measure  $measure
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Measure $measure)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Measure  $measure
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Measure $measure)
-    {
-        //
+        
+        try {
+            $measure = new Measure();
+            $measure->temp = $request->input('temp');
+            $measure->hum = $request->input('hum');
+            $measure->humearth = $request->input('humearth');
+            $measure->water_level = $request->input('water_level');
+            $measure->date = $request->input('date');
+            $measure->save();
+        }
+        catch (Exception $e){
+            return response()->json(array("status" => false, "response" => "no all fields"),404);
+        }
+        return response()->json(array("status" => true, "response" => "OK", 202));
     }
 }
