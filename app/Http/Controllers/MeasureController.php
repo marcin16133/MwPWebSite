@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Measure;
+use App\Settings;
 use Illuminate\Http\Request;
 use Exception;
 
@@ -27,10 +28,17 @@ class MeasureController extends Controller
             $measure->water_level = $request->input('water_level');
             $measure->date = $request->input('date');
             $measure->save();
+
+            
+            $settings = Settings::first();
+
+            return response()->json(array("status" => true, 
+                'time_between_water' => $settings->time_between_water, 
+                    'amount_water_to_water' => $settings->amount_water_to_water, 
+                        'treshold' => $settings->treshold) ,202);
         }
         catch (Exception $e){
-            return response()->json(array("status" => false, "response" => "no all fields"),404);
+            return response()->json(array("status" => false),404);
         }
-        return response()->json(array("status" => true, "response" => "OK", 202));
     }
 }

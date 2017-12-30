@@ -50,6 +50,7 @@
                         @else
                             <li id="water-level" class="fa"></li>
                             <li id="wifi" class="fa fa-wifi"></li>
+                            <li><span id="modal-btn" class="fa fa-cog" data-toggle="modal" data-target="#ustawienia"></span></li>
                             {{-- <li><span class="fa fa-wifi"></li> --}}
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Measure;
 use App\Helpers\Plants;
+use App\Settings;
 
 
 class HomeController extends Controller
@@ -70,9 +71,19 @@ class HomeController extends Controller
             ]
         ]);
         
+        $settings = Settings::first();
+
+
         
         $conn = $this->checkConnection(strtotime($response['measures'][0]->date));
-        return view('home.index', ['measures' => $response['measures'], 'connection' => $conn]);
+        return view('home.index', ['measures' => $response['measures'], 'connection' => $conn, 'settings' => $settings]);
+    }
+
+
+    public function saveSettings(Request $request)
+    {
+        $settings = Settings::first();
+        $settings->update($request->all());
     }
 
     private function checkConnection($time)
@@ -96,29 +107,28 @@ class HomeController extends Controller
         $measures = Measure::orderBy('date', true)->limit($count)->get();
 
 
-
         $temperatures = \Lava::DataTable();
         $temperatures->addStringColumn('Data')
                      ->addNumberColumn('Temperatura');
 
-        foreach ($measures as $measure) {
-            $temperatures->addRow([explode(' ',$measure->date)[1],  $measure->temp]);
+        for ($i = (count($measures) - 1); $i >= 0; $i--) {
+            $temperatures->addRow([explode(' ',$measures[$i]->date)[1],  $measures[$i]->temp]);
         }
 
         $hum = \Lava::DataTable();
         $hum->addStringColumn('Data')
                      ->addNumberColumn('Temperatura');
 
-        foreach ($measures as $measure) {
-            $hum->addRow([explode(' ',$measure->date)[1],  $measure->hum]);
+        for ($i = (count($measures) - 1); $i >= 0; $i--) {
+            $hum->addRow([explode(' ',$measures[$i]->date)[1],  $measures[$i]->hum]);
         }
 
         $humearth = \Lava::DataTable();
         $humearth->addStringColumn('Data')
                      ->addNumberColumn('Temperatura');
 
-        foreach ($measures as $measure) {
-            $humearth->addRow([explode(' ',$measure->date)[1],  $measure->humearth]);
+        for ($i = (count($measures) - 1); $i >= 0; $i--) {
+            $humearth->addRow([explode(' ',$measures[$i]->date)[1],  $measures[$i]->humearth]);
         }
 
 

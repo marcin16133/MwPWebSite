@@ -20,6 +20,9 @@ Route::post('/measure', 'MeasureController@store');
 
 Route::get('/measures', 'HomeController@plotData');
 
+Route::post('/settings', 'HomeController@saveSettings');
+
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');

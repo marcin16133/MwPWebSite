@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"measu",
+				"measures1〔function〕"
+			],
+			[
+				"hum",
+				"humTreshHold〔variable〕"
+			],
+			[
+				"time",
+				"timeBetweenWater"
+			],
+			[
+				"wat",
+				"waterAmountToWater"
+			],
+			[
+				"res",
+				"responseJson〔variable〕"
+			],
+			[
+				"wa",
+				"waterAmountToWater〔variable〕"
+			],
+			[
+				"resp",
+				"responseJson"
+			],
+			[
+				"amo",
+				"amount_water_to_water〔variable〕"
+			],
+			[
 				"water",
 				"water_level"
 			],
@@ -80,10 +112,6 @@
 				"pinWaterLevel"
 			],
 			[
-				"measu",
-				"measures〔variable〕"
-			],
-			[
 				"retu",
 				"$returnHTML〔variable〕"
 			],
@@ -92,24 +120,12 @@
 				"fun\tfunction …"
 			],
 			[
-				"wat",
-				"waterAmountToWater〔argument〕"
-			],
-			[
 				"tick",
 				"ticks_ms"
 			],
 			[
-				"hum",
-				"humTreshHold"
-			],
-			[
 				"wate",
 				"water_level〔argument〕"
-			],
-			[
-				"time",
-				"timeBetweenWater"
 			],
 			[
 				"meas",
@@ -498,85 +514,43 @@
 			[
 				"histor",
 				"$histories〔variable〕"
-			],
-			[
-				"js",
-				"json_encode('logout"
-			],
-			[
-				"cardU",
-				"$cardUpdate〔variable〕"
-			],
-			[
-				"tmp",
-				"tmp_user"
-			],
-			[
-				"cards",
-				"cards_users_fk"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/HomeController.php",
+			"file": "/F/studia/sem6/swlab/esptool/main.py",
 			"settings":
 			{
-				"buffer_size": 3770,
+				"buffer_size": 3212,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/MeasureController.php",
+			"settings":
+			{
+				"buffer_size": 1226,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/home/table.blade.php",
+			"file": "app/Http/Controllers/HomeController.php",
 			"settings":
 			{
-				"buffer_size": 504,
+				"buffer_size": 4082,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "resources/views/home/index.blade.php",
 			"settings":
 			{
-				"buffer_size": 2470,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/F/studia/sem6/swlab/esptool/main.py",
-			"settings":
-			{
-				"buffer_size": 2864,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/views/layouts/app.blade.php",
-			"settings":
-			{
-				"buffer_size": 3727,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/css/mycss.css",
-			"settings":
-			{
-				"buffer_size": 1060,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": ".env",
-			"settings":
-			{
-				"buffer_size": 591,
+				"buffer_size": 5382,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -590,16 +564,20 @@
 	"command_palette":
 	{
 		"height": 490.0,
-		"last_filter": "serv",
+		"last_filter": "serve",
 		"selected_items":
 		[
+			[
+				"serve",
+				"Laravel Artisan 5: Serve"
+			],
 			[
 				"serv",
 				"Laravel Artisan 5: Serve"
 			],
 			[
-				"serve",
-				"Laravel Artisan 5: Serve"
+				"makese",
+				"Laravel Artisan 5: Make:Seeder"
 			],
 			[
 				"makepro",
@@ -624,10 +602,6 @@
 			[
 				"dbse",
 				"Laravel Artisan 5: DB:Seed"
-			],
-			[
-				"makese",
-				"Laravel Artisan 5: Make:Seeder"
 			],
 			[
 				"install",
@@ -791,35 +765,40 @@
 	],
 	"file_history":
 	[
+		"/F/studia/sem6/swlab/E-Doniczka/public/css/mycss.css",
+		"/F/studia/sem6/swlab/E-Doniczka/.env",
+		"/G/xampp/htdocs/fermy/resources/views/codzienne_raporty/create.blade.php",
+		"/F/studia/sem6/swlab/E-Doniczka/routes/web.php",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/views/home/index.blade.php",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Controllers/HomeController.php",
+		"/F/studia/sem6/swlab/E-Doniczka/database/migrations/2017_12_19_153152_create_settings_table.php",
+		"/F/studia/sem6/swlab/E-Doniczka/database/seeds/SettingsTableSeeder.php",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/views/layouts/app.blade.php",
+		"/F/studia/sem6/swlab/E-Doniczka/app/Settings.php",
+		"/F/studia/sem6/swlab/E-Doniczka/database/seeds/DatabaseSeeder.php",
+		"/F/studia/sem6/swlab/E-Doniczka/resources/views/home/table.blade.php",
 		"/F/studia/sem6/swlab/E-Doniczka/config/app.php",
 		"/G/xampp/htdocs/mapy_serwer/resources/views/areas/index.blade.php",
 		"/G/xampp/htdocs/mapy_serwer/resources/views/layouts/app.blade.php",
 		"/F/studia/sem6/swlab/E-Doniczka/database/seeds/MeasuresTableSeeder.php",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Controllers/MeasureController.php",
-		"/F/studia/sem6/swlab/E-Doniczka/resources/views/layouts/app.blade.php",
 		"/F/studia/sem6/swlab/E-Doniczka/composer.json",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Helpers/Plants.php",
 		"/F/studia/sem6/swlab/esptool/main.py",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Exceptions/Handler.php",
-		"/F/studia/sem6/swlab/E-Doniczka/resources/views/home/index.blade.php",
-		"/F/studia/sem6/swlab/E-Doniczka/routes/web.php",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Middleware/VerifyCsrfToken.php",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Kernel.php",
 		"/F/studia/sem6/swlab/E-Doniczka/routes/api.php",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Providers/HelperServiceProvider.php",
 		"/D/a.sh",
 		"/D/zadanie1.sh",
-		"/F/studia/sem6/swlab/E-Doniczka/resources/views/home/table.blade.php",
-		"/F/studia/sem6/swlab/E-Doniczka/.env",
 		"/F/studia/sem6/swlab/E-Doniczka/app/Providers/AppServiceProvider.php",
 		"/F/studia/sem6/swlab/E-Doniczka/resources/assets/js/app.js",
 		"/F/studia/sem6/swlab/E-Doniczka/config/mail.php",
 		"/F/studia/sem6/swlab/E-Doniczka/resources/views/mail/first.blade.php",
 		"/F/studia/sem6/swlab/E-Doniczka/resources/assets/js/components/Example.js",
 		"/F/studia/sem6/swlab/E-Doniczka/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/F/studia/sem6/swlab/E-Doniczka/database/seeds/DatabaseSeeder.php",
 		"/F/studia/sem6/swlab/E-Doniczka/database/migrations/2017_12_08_081151_create_measures_table.php",
-		"/F/studia/sem6/swlab/E-Doniczka/app/Http/Controllers/HomeController.php",
 		"/F/studia/sem6/swlab/E-Doniczka/database/seeds/UsersTableSeeder.php",
 		"/F/studia/sem6/swlab/E-Doniczka/app/User.php",
 		"/F/studia/sem6/swlab/E-Doniczka/config/database.php",
@@ -848,7 +827,6 @@
 		"/G/xampp/htdocs/fermy/database/seeds/UsersTableSeeder.php",
 		"/G/xampp/htdocs/fermy/app/Stado.php",
 		"/G/xampp/htdocs/fermy/database/migrations/2017_10_28_222713_create_users_has_roles_table.php",
-		"/G/xampp/htdocs/fermy/resources/views/codzienne_raporty/create.blade.php",
 		"/G/xampp/htdocs/fermy/database/migrations/2017_11_30_175849_create_codzienne_raporty_table.php",
 		"/G/xampp/htdocs/fermy/app/Ferma.php",
 		"/G/xampp/htdocs/fermy/app/Http/Controllers/Controller.php",
@@ -914,11 +892,7 @@
 		"/G/xampp/htdocs/mapy_serwer/app/Http/Requests/FieldWorkRequest.php",
 		"/G/xampp/htdocs/mapy_serwer/app/Http/Requests/CultivationsRequest.php",
 		"/G/xampp/htdocs/mapy_serwer/database/migrations/2017_11_24_091107_create_cultivations_table.php",
-		"/G/xampp/htdocs/mapy_serwer/app/Http/Controllers/AreasController.php",
-		"/G/xampp/htdocs/fermy/.env",
-		"/G/xampp/htdocs/mapy_serwer/resources/views/cultivations/create.blade.php",
-		"/G/xampp/htdocs/mapy_serwer/resources/views/cultivations/edit.blade.php",
-		"/G/xampp/htdocs/mapy_serwer/resources/views/areas/create.blade.php"
+		"/G/xampp/htdocs/mapy_serwer/app/Http/Controllers/AreasController.php"
 	],
 	"find":
 	{
@@ -936,6 +910,20 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"'",
+			"time_between_water",
+			"->",
+			"('');",
+			"settings",
+			"type",
+			"smiertelnosc_suma",
+			"dataRaportu",
+			"kod_stada",
+			"input",
+			"++)",
+			"count($measures) - 1",
+			"        foreach ($measures as $measure) {\n",
+			"row",
 			"chargebattery",
 			"_div",
 			"div",
@@ -990,6 +978,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1005,19 +994,48 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/HomeController.php",
+					"file": "/F/studia/sem6/swlab/esptool/main.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3770,
+						"buffer_size": 3212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1701,
-								1701
+								1405,
+								1405
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 883.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/MeasureController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								898,
+								916
 							]
 						],
 						"settings":
@@ -1028,69 +1046,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1348.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/views/home/table.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 504,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								92,
-								92
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "resources/views/home/index.blade.php",
+					"file": "app/Http/Controllers/HomeController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2470,
+						"buffer_size": 4082,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1651,
-								1661
+								1667,
+								1667
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 833.0,
+						"translation.y": 761.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1098,47 +1085,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/F/studia/sem6/swlab/esptool/main.py",
+					"file": "resources/views/home/index.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2864,
+						"buffer_size": 5382,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2110,
-								2110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1291.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "resources/views/layouts/app.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3727,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1438,
-								1438
+								1582,
+								1582
 							]
 						],
 						"settings":
@@ -1149,70 +1108,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 224.0,
+						"translation.y": 586.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "public/css/mycss.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1060,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								568,
-								568
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"auto_name": "",
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 440.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": ".env",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 591,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								19,
-								19
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1220,7 +1119,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1265,7 +1164,7 @@
 	"project": "edoniczka_project.sublime-project",
 	"replace":
 	{
-		"height": 55.0
+		"height": 93.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -1,5 +1,5 @@
 #app {
-	background: url('/images/bg.jpg');
+	background: url('../images/bg.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	min-height: 100vh;
@@ -13,16 +13,16 @@
 
 
 #water-level {
-	font-size: 40px;
+	font-size: 30px;
 	color: #00aaff;
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-right: 8px;
 	margin-left: 8px;
 }
 
 #wifi {
-	font-size: 40px;
-	margin-top: 5px;
+	font-size: 30px;
+	margin-top: 10px;
 	margin-left: 8px;
 	margin-right: 8px;
 	color: green;
@@ -46,6 +46,17 @@
 	font-size: 26px;
 	color: #00aa00aa !important;
 }
+
+#modal-btn {
+	background: none !important;
+	border: none;
+	color: #444;
+	font-size: 30px !important;
+	margin-top: 10px;
+	margin-left: 8px !important;
+	margin-right: 8px !important;
+}
+
 
 body {
 	font-family: Arial;
